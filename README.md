@@ -1,6 +1,5 @@
 # MM-TSFlib
-MM-TSFlib is an open-source library for multimodal time-series forecasting based on [Time-MMD]
-(https://github.com/AdityaLab/Time-MMD/) dataset.
+MM-TSFlib is an open-source library for multimodal time-series forecasting based on [Time-MMD](https://github.com/AdityaLab/Time-MMD/) dataset.
 
 <div align="center">
     <img src="https://github.com/AdityaLab/MM-TSFlib/blob/main/lib_overview_00.png" width="500">
