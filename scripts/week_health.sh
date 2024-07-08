@@ -1,10 +1,10 @@
 export CUDA_VISIBLE_DEVICES=$3
 
-all_models=("Crossformer" "DLinear" "FEDformer" "FiLM" "Informer" "iTransformer" "Nonstationary_Transformer")
+all_models=("Informer" "Crossformer")
 start_index=$1
 end_index=$2
 models=("${all_models[@]:$start_index:$end_index-$start_index+1}")
-root_paths=("/localscratch/hliu763/24Fall/Time-Series-Library-Benchmarking-Multimodal_0527/A_SeriesData_0526/Weekly/Public_Health")
+root_paths=("./data/Public_Health")
 data_paths=("US_FLURATIO_Week.csv") 
 pred_lengths=(24)
 seeds=(2021 2024 1998)
@@ -37,12 +37,11 @@ do
           --pred_len $pred_len \
           --des 'Exp' \
           --seed $seed \
-          --text_path "./A_SearchData/Public_Health/Merged_Africa+influenza,influenza infection_Gsearch_20240521.csv" \
           --type_tag "#F#" \
           --text_len 4 \
           --prompt_weight 0.5 \
           --pool_type "avg" \
-          --save_name "result_bert_0602" \
+          --save_name "result_bert_0708" \
           --llm_model BERT \
           --use_fullmodel $use_fullmodel
       done
