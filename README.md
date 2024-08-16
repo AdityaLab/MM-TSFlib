@@ -7,6 +7,18 @@ MM-TSFlib is an open-source library for multimodal time-series forecasting based
 
 :triangular_flag_on_post:**News** (2024.06)  Preprocessing functions and preprocessed data to speed up the training process will be released soon
 
+ 
+## Usage
+
+1. Install environment, execute the following command.
+
+```
+pip install -r environment.txt
+```
+
+2. Prepare Data. Our dataset is [Time-MMD](https://github.com/AdityaLab/Time-MMD/) dataset.
+We provide preprocessed data in the ./data folder to accelerate training, particularly simplifying the text matching process.
+
 ## Citation
 
 If you find this repo useful, please cite our paper.
