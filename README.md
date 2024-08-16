@@ -23,6 +23,15 @@ We provide preprocessed data in the ./data folder to accelerate training, partic
 
 3. Prepare for open-source LLMs. Our framework currently supports models such as LLAMA2, LLAMA3, GPT2, BERT, GPT2M, GPT2L, and GPT2XL, all available on Hugging Face. Please ensure you have your own Hugging Face token ready.
 
+4. Train and evaluate model. We provide the example experiment script under the folder `./scripts/`. You can reproduce the experiment results as the following examples:
+
+```
+#Conduct experiments on the health dataset using GPU 0, and utilize the 0th to 1st models.
+bash ./scripts/week_health.sh.sh 0 1 0
+```
+-You can set a list of model names, prediction lengths, and random seeds in the script for batch experiments. We recommend specifying `--save_name` to better organize and save the results.
+
+
 ## Citation
 
 If you find this repo useful, please cite our paper.
