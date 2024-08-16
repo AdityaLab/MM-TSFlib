@@ -28,7 +28,7 @@ pip install -r environment.txt
 2. Prepare Data. Our dataset is [Time-MMD](https://github.com/AdityaLab/Time-MMD/) dataset.
 We provide preprocessed data in the ./data folder to accelerate training, particularly simplifying the text matching process.
 
-2. Prepare for ClosedSource LLM. Our framework is already capable of integrating closed-source LLMs. To save costs, you should first use closed-source LLMs, such as GPT-3.5, to generate text-based predictions. We have provided specific preprocessing methods in the [[document/file](https://github.com/AdityaLab/MM-TSFlib/tree/main/data/DataPre_ClosedSourceLLM)].
+2. Prepare for ClosedSource LLM. Our framework is already capable of integrating closed-source LLMs. To save costs, you should first use closed-source LLMs, such as GPT-3.5, to generate text-based predictions. We have provided specific preprocessing methods in the [[document/file](https://github.com/AdityaLab/MM-TSFlib/tree/main/data/DataPre_ClosedSourceLLM)]. We have also provided preprocessed data that can be directly used in `./data/`
 
 3. Prepare for open-source LLMs. Our framework currently supports models such as LLAMA2, LLAMA3, GPT2, BERT, GPT2M, GPT2L, and GPT2XL, all available on Hugging Face. Please ensure you have your own Hugging Face token ready.
 
@@ -39,7 +39,7 @@ We provide preprocessed data in the ./data folder to accelerate training, partic
 bash ./scripts/week_health.sh.sh 0 1 0
 ```
 - You can set a list of model names, prediction lengths, and random seeds in the script for batch experiments. We recommend specifying `--save_name` to better organize and save the results.
-- `--llm_model` can set as LLAMA2, LLAMA3, GPT2, BERT, GPT2M, GPT2L, GPT2XL, Doc2Vec, ClosedLLM. When using ClosedLLM, you need to do Step 2.
+- `--llm_model` can set as LLAMA2, LLAMA3, GPT2, BERT, GPT2M, GPT2L, GPT2XL, Doc2Vec, ClosedLLM. When using ClosedLLM, you need to do Step 3 at first.
 - `--pool_type` can set as avg min max attention for different pooling ways of token. When `--pool_type` is set to attention, we use the output of the time series model to calculate attention scores for each token in the LLM output and perform weighted aggregation.
 
 
