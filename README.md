@@ -10,6 +10,8 @@ MM-TSFlib is an open-source library for multimodal time-series forecasting based
 
 :triangular_flag_on_post:**News** (2024.08) We now support enhancing inter-modal interactions using an attention mechanism by setting `--pool_type` to attention. 
 
+:triangular_flag_on_post:**News** (2024.08) We have uploaded additional preprocessed datasets, which significantly accelerate the training process.
+
 :triangular_flag_on_post:**News** (2024.08) We have significantly cleaned up the code and written detailed documentation for usage. 
 
 :triangular_flag_on_post:**News** (2024.06)  Preprocessing functions and preprocessed data to speed up the training process will be released soon
