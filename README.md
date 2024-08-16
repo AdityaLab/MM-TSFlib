@@ -29,7 +29,8 @@ We provide preprocessed data in the ./data folder to accelerate training, partic
 #Conduct experiments on the health dataset using GPU 0, and utilize the 0th to 1st models.
 bash ./scripts/week_health.sh.sh 0 1 0
 ```
--You can set a list of model names, prediction lengths, and random seeds in the script for batch experiments. We recommend specifying `--save_name` to better organize and save the results.
+- You can set a list of model names, prediction lengths, and random seeds in the script for batch experiments. We recommend specifying `--save_name` to better organize and save the results.
+- '--llm_model' can set as LLAMA2, LLAMA3, GPT2, BERT, GPT2M, GPT2L, GPT2XL, Doc2Vec, ClosedLLM.
 
 
 ## Citation
