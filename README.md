@@ -19,6 +19,8 @@ pip install -r environment.txt
 2. Prepare Data. Our dataset is [Time-MMD](https://github.com/AdityaLab/Time-MMD/) dataset.
 We provide preprocessed data in the ./data folder to accelerate training, particularly simplifying the text matching process.
 
+2. Prepare for ClosedSource LLM. Our framework is already capable of integrating closed-source LLMs. To save costs, you should first use closed-source LLMs, such as GPT-3.5, to generate text-based predictions. We have provided specific preprocessing methods in the [[document/file](https://github.com/AdityaLab/MM-TSFlib/tree/main/data/DataPre_ClosedSourceLLM)].
+
 ## Citation
 
 If you find this repo useful, please cite our paper.
