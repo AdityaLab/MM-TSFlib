@@ -5,6 +5,13 @@ MM-TSFlib is an open-source library for multimodal time-series forecasting based
     <img src="https://github.com/AdityaLab/MM-TSFlib/blob/main/lib_overview_00.png" width="500">
 </div>
 
+
+:triangular_flag_on_post:**News** (2024.08) We have largely extanded text modeling approaches, now supporting open-source models (LLAMA2, LLAMA3, GPT2, BERT, GPT2M, GPT2L, GPT2XL), any closed-source models, as well as small models trained from scratch (e.g., Doc2Vec). You can specify the model using the `--llm_model` option.
+
+:triangular_flag_on_post:**News** (2024.08) We now support enhancing inter-modal interactions using an attention mechanism by setting `--pool_type` to attention. 
+
+:triangular_flag_on_post:**News** (2024.08) We have significantly cleaned up the code and written detailed documentation for usage. 
+
 :triangular_flag_on_post:**News** (2024.06)  Preprocessing functions and preprocessed data to speed up the training process will be released soon
 
  
@@ -30,8 +37,8 @@ We provide preprocessed data in the ./data folder to accelerate training, partic
 bash ./scripts/week_health.sh.sh 0 1 0
 ```
 - You can set a list of model names, prediction lengths, and random seeds in the script for batch experiments. We recommend specifying `--save_name` to better organize and save the results.
-- `--llm_model` can set as LLAMA2, LLAMA3, GPT2, BERT, GPT2M, GPT2L, GPT2XL, Doc2Vec, ClosedLLM.
-- `--pool_type` can set as avg min max attention for different pooling ways of token.
+- `--llm_model` can set as LLAMA2, LLAMA3, GPT2, BERT, GPT2M, GPT2L, GPT2XL, Doc2Vec, ClosedLLM. When using ClosedLLM, you need to do Step 2.
+- `--pool_type` can set as avg min max attention for different pooling ways of token. When `--pool_type` is set to attention, we use the output of the time series model to calculate attention scores for each token in the LLM output and perform weighted aggregation.
 
 
 ## Citation
