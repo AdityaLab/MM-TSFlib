@@ -21,6 +21,8 @@ We provide preprocessed data in the ./data folder to accelerate training, partic
 
 2. Prepare for ClosedSource LLM. Our framework is already capable of integrating closed-source LLMs. To save costs, you should first use closed-source LLMs, such as GPT-3.5, to generate text-based predictions. We have provided specific preprocessing methods in the [[document/file](https://github.com/AdityaLab/MM-TSFlib/tree/main/data/DataPre_ClosedSourceLLM)].
 
+3. Prepare for open-source LLMs. Our framework currently supports models such as LLAMA2, LLAMA3, GPT2, BERT, GPT2M, GPT2L, and GPT2XL, all available on Hugging Face. Please ensure you have your own Hugging Face token ready.
+
 ## Citation
 
 If you find this repo useful, please cite our paper.
