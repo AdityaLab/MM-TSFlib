@@ -1,0 +1,3 @@
+cchardet
+mamba-ssm
+translate-api
