@@ -705,7 +705,7 @@ class Exp_Long_Term_Forecast(Exp_Basic):
                 else:
                     prompt_emb=prompt_emb.unsqueeze(-1)
                 prompt_y=norm(prompt_emb)+prior_y
-                outputs=(1-self.prompt_weight)*outputs+self.prompt_weight*prompt_y
+                #outputs=(1-self.prompt_weight)*outputs+self.prompt_weight*prompt_y
                 f_dim = -1 if self.args.features == 'MS' else 0
                 outputs = outputs[:, -self.args.pred_len:, :]
                 outputs=(1-self.prompt_weight)*outputs+self.prompt_weight*prompt_y
